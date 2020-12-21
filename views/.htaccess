@@ -1,0 +1,12 @@
+AuthUserFile /dev/null
+AuthGroupFile /dev/null
+AuthName "ICOSNET Admin Access Control"
+AuthType Basic
+<LIMIT GET>
+order deny,allow
+deny from all
+# Whitelist IP address
+allow from xx.xx.xx.xxx
+allow from xx.xx.xx.xxx
+allow from xx.xx.xx.xxx
+</LIMIT>
